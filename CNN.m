@@ -2,7 +2,7 @@ close all; clear; clc
 %% import data
 [images_train, labels_train] = mnist_parse('train-images-idx3-ubyte', 'train-labels-idx1-ubyte');
 [images_test, labels_test] = mnist_parse('t10k-images-idx3-ubyte', 't10k-labels-idx1-ubyte');
-
+    
 % tranform MNIST matlab data to image files
 if exist('MNIST_images','dir')==0
     for i=0:9
